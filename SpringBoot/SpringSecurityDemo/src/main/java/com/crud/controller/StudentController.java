@@ -1,0 +1,45 @@
+package com.crud.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.crud.model.Student;
+
+@RestController
+public class StudentController {
+	
+	
+	private List<Student> students = new ArrayList<>();
+	
+	@GetMapping("/getDetails")
+	public List<Student> getStudentData(){
+		
+		
+		Student st1 = new Student();
+		st1.setId(1);
+		st1.setName("Thulasi");
+		st1.setGender("Male");
+		
+		Student st2 = new Student();
+		st2.setId(2);
+		st2.setName("Ramlal");
+		st2.setGender("Male");
+	
+		students.add(st1);
+		students.add(st2);	
+		return students;
+		
+	}
+	
+	@PostMapping("/createStData")
+	public Student createStudent(@RequestBody Student student) {
+		students.add(student);
+		return student;
+	}
+
+}

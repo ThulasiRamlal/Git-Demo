@@ -1,0 +1,2 @@
+spring.application.name=SpringSecurityDemo3
+server.port=9090

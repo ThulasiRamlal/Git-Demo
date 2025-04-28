@@ -1,0 +1,46 @@
+package com.security.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.security.entity.Student;
+
+@RestController
+public class StudentController {
+
+	
+	
+	private List<Student> students=new ArrayList<>();
+	
+	
+	public List<Student> getStudent()
+	{
+		
+	Student s=new Student();
+	Student s1=new Student();
+	Student s2=new Student();
+	
+	
+	s.setRoll(1);
+	s.setName("Thulasi");
+	s.setAge(10);
+	
+	s1.setRoll(2);
+	s1.setName("Kaveri");
+	s1.setAge(11);
+	
+	s2.setRoll(3);
+	s2.setName("Teja");
+	s2.setAge(12);
+	
+	students.add(s);
+	students.add(s1);
+	students.add(s2);
+	
+	return students;
+	
+	}
+	}
+	

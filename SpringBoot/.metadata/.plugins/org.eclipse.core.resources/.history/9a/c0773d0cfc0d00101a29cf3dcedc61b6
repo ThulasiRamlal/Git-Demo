@@ -1,0 +1,26 @@
+package com.security.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.security.entity.Student;
+
+@RestController
+public class StudentController {
+
+	
+	
+	private List<Student> students=new ArrayList<>();
+	
+	
+	public List<Student> getStudent()
+	{
+		
+	Student s=new Student();
+	Student s1=new Student();
+	Student s3=new Student();
+	}
+	}
+	

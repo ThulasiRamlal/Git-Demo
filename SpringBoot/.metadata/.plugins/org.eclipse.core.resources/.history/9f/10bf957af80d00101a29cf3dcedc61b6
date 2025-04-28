@@ -1,0 +1,67 @@
+package com.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.entity.Employee;
+
+@RestController
+public class EmployeController {
+
+	
+	private List<Employee>employees=new ArrayList<>();
+	
+	
+	@GetMapping("/getEmployee")
+	public List<Employee> getEmployee()
+	{
+		
+		Employee e=new Employee();
+		
+		e.setId(1);
+		e.setName("Thulasi");
+		e.setAge(10);
+		
+		Employee e1=new Employee();
+		e1.setId(2);
+		e1.setName("Kaveri");
+		e1.setAge(11);
+		
+		Employee e2=new Employee();
+		e2.setId(3);
+		e2.setName("Teja");
+		e2.setAge(13);
+		
+		employees.add(e);
+		employees.add(e1);
+		employees.add(e2);
+		
+		return employees;
+		
+	}
+	
+	
+	@PostMapping("/createData")
+	public Employee createEmployee(@RequestBody Employee employee)
+	{
+	
+		employees.add(employee);
+		return employee;
+		
+	
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

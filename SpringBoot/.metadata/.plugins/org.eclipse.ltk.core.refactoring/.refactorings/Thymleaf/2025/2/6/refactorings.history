@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.web.UserLogin&apos; to &apos;userController&apos;&#x0D;&#x0A;- Original project: &apos;Thymleaf&apos;&#x0D;&#x0A;- Original element: &apos;com.web.UserLogin&apos;&#x0D;&#x0A;- Renamed element: &apos;com.web.userController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserLogin&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.web{UserLogin.java[UserLogin" matchStrategy="1" name="userController" qualified="false" references="true" similarDeclarations="false" stamp="1738949333756" textual="false" version="1.0"/>
+</session>

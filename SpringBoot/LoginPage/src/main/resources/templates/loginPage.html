@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head><title>LoginPage</title></head>
+	
+	<body>
+		
+		<h1 style="color: red;">Welcome to Login Page</h1>
+		<form th:action="@{/login}" method="post" th:object="${user}">
+			<label for="Username">UserName: </label>
+		<input type="text" name="userName" id="Username" required placeholder="UserName"/><br><br>
+		<label for="password">Password : </label>
+		<input type="password" name="password" id="password" required placeholder="password"><br><br>
+		<button type="submit">Submit</button>
+		
+		</form>
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	</html>
